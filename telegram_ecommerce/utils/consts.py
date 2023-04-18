@@ -4,7 +4,7 @@ credentials_path = "user_credentials.json"
 
 
 default_language = "en"
-currency = "USD"
+currency = "INR"
 credentials_path = "telegram_ecommerce/utils/user_credentials.json"
 credentials = load_json_file(credentials_path)
 db_credentials = credentials["db_credentials"]

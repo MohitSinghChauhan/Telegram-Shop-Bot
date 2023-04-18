@@ -46,8 +46,8 @@ def send_a_shipping_message(update, context, product , pattern_identifier):
 
 def process_order(query, product, context):
     PROCESS_OK, PROCESS_FAIL = (True, False)
-    # if query.invoice_payload != str(product.product_id):
-    #     return (PROCESS_FAIL, get_text("information_dont_match", context))
+    if query.invoice_payload != str(product.product_id):
+        return (PROCESS_FAIL, get_text("information_dont_match", context))
     try:
         add_orders(
             query.id,
