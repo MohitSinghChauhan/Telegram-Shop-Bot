@@ -59,7 +59,7 @@ class ListProductIterator():
         return actual_product
 
 
-    def previus(self):
+    def previous(self):
         self.__decrement_iter__()
         actual_product = self.list_of_products[self.iter]
         return actual_product

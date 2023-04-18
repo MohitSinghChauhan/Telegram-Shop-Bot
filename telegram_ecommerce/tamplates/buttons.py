@@ -97,8 +97,8 @@ def tamplate_for_show_a_list_of_products(pattern_identifier, context=None):
     return InlineKeyboardMarkup([
         [
             InlineButton(
-                get_text("previus_product", context),
-                callback_data=pattern_identifier + 'previus_product'),
+                get_text("previous_product", context),
+                callback_data=pattern_identifier + 'previous_product'),
             InlineButton(
                 get_text("product_details", context),
                 callback_data=pattern_identifier + 'product_details'),
@@ -112,8 +112,8 @@ def tamplate_for_show_a_detailed_product(pattern_identifier, context=None):
     return InlineKeyboardMarkup([
         [
             InlineButton(
-                get_text("previus_product", context),
-                callback_data=pattern_identifier + 'previus_product'),
+                get_text("previous_product", context),
+                callback_data=pattern_identifier + 'previous_product'),
             InlineButton(
                 get_text("buy", context),
                 callback_data=pattern_identifier + 'buy_product')

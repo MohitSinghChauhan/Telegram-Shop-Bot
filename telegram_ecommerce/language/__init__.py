@@ -5,7 +5,7 @@ from ..utils.consts import default_language
 
 all_languages = {
     "en" : text_en,
-    "pt" : text_pt}
+}
 
 
 class Language():

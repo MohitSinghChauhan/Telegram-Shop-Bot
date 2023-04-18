@@ -31,7 +31,7 @@ products_data = {
 
 
 pattern_identifier = "response_from_buttons_in_products_that_match"
-PATTERN_TO_CATCH_THE_PREVIUS_PRODUCT = 'previus_product'
+PATTERN_TO_CATCH_THE_PREVIOUS_PRODUCT = 'previous_product'
 PATTERN_TO_CATCH_THE_NEXT_PRODUCT = 'next_product'
 PATTERN_TO_CATCH_THE_VIEW_DETAILS = 'product_details'
 PATTERN_TO_CATCH_THE_BUY_BUTTON = 'buy_product'
@@ -82,8 +82,8 @@ def show_list_of_product_that_match(update, context):
     return SHOW_LIST_OF_PRODUCT_THAT_MATCH
 
 
-def catch_previus(update, context):
-    product = context.user_data[products_data_key]["products"].previus()
+def catch_previous(update, context):
+    product = context.user_data[products_data_key]["products"].previous()
     send_a_product(update, context, product, pattern_identifier)
     return SHOW_LIST_OF_PRODUCT_THAT_MATCH
 
@@ -139,9 +139,9 @@ search = ConversationHandler(
                 pattern = pattern_identifier +
                 PATTERN_TO_CATCH_THE_NEXT_PRODUCT),
             CallbackQueryHandler(
-                catch_previus, 
+                catch_previous, 
                 pattern = pattern_identifier +
-                PATTERN_TO_CATCH_THE_PREVIUS_PRODUCT),
+                PATTERN_TO_CATCH_THE_PREVIOUS_PRODUCT),
             CallbackQueryHandler(
                 catch_details,
                 pattern = pattern_identifier +
@@ -149,9 +149,9 @@ search = ConversationHandler(
             ],
         BUY_PROCESS : [
             CallbackQueryHandler(
-                catch_previus, 
+                catch_previous, 
                 pattern = pattern_identifier +
-                PATTERN_TO_CATCH_THE_PREVIUS_PRODUCT),
+                PATTERN_TO_CATCH_THE_PREVIOUS_PRODUCT),
             CallbackQueryHandler(
                 send_a_shipping_message_callback, 
                 pattern = pattern_identifier + 

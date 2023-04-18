@@ -42,7 +42,7 @@ To add others admin you can use the command(Note: have sure that the people alre
 """,
     "register_description" : "Create a password to make purchase",
     "cancel" : "❌Cancel",
-    "previus" : "⬅️ Previus",
+    "previous" : "⬅️ Previous",
     "next" : "➡️ Next",
     "OK" : "👍OK",
     "ask_if_want_create_a_password" : "Do you want to create a numeric password? (required to authenticate when making a purchase)",
