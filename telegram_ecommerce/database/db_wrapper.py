@@ -8,7 +8,7 @@ from ..utils.log import logger
 
 class DBWrapper():
     def __init__(self, db_credentials):
-        self.database_name = "u155194195_bot"
+        self.database_name = "u155194195_bot1"
         self.connection = connector.connect(**db_credentials)
         self.connection.get_warnings = True
         if not self.this_db_exist():
