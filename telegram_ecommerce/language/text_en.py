@@ -1,10 +1,10 @@
 
 text_en = ({
     "start" : 
-"""Hello, I'm a ShopE-Litmus bot that will help you buy products in our Cake Bakery. 
-type /show_categories to see categories.
-type /register to autenticate your account. Without this you can't make purchases.
-type /help for more information.""",
+"""Greetings! I am a QuickBite assistant, here to assist you with your purchases at our Fast Food Corner.
+To view our categories, please type /show_categories.
+To authenticate your account, please type /register. This step is mandatory for making purchases.
+If you require further assistance, feel free to type /help.""",
     "start_description" : "A wellcome message if you dont known this bot",
     "help" : 
 
