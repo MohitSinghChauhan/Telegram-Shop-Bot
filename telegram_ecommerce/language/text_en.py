@@ -2,10 +2,10 @@
 text_en = ({
     "start" : 
 """Greetings! I am a QuickBite assistant, here to assist you with your purchases at our Fast Food Corner.
-To view our categories, please type /show_categories.
-To authenticate your account, please type /register. This step is mandatory for making purchases.
-If you require further assistance, feel free to type /help.""",
-    "start_description" : "A wellcome message if you dont known this bot",
+- To view our categories, please type /show_categories.
+- To authenticate your account, please type /register. This step is mandatory for making purchases.
+- If you require further assistance, feel free to type /help.""",
+    "start_description" : "A welcome message if you dont known this bot",
     "help" : 
 
 """The fallowing are instructions of how use this bot:

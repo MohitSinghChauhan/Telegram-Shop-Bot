@@ -154,4 +154,3 @@ register = ConversationHandler(
     fallbacks = [MessageHandler(Filters.all, cancel_register)],
     )
 
-
